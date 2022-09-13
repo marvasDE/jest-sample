@@ -8,12 +8,7 @@ const config: Config.InitialOptions = {
     "js"
   ],
   transform: {
-    "^.+\\.(ts|tsx)$": "ts-jest"
-  },
-  globals: {
-    "ts-jest": {
-      tsconfig: "tsconfig.json"
-    }
+    "^.+\\.(ts|tsx)$": ["ts-jest", { tsconfig: "tsconfig.json" }]
   },
   testEnvironment: './jest.environment.ts',
   testMatch: [
